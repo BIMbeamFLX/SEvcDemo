@@ -1114,6 +1114,7 @@ function toggleTag(tag) {
   if (selectedTags.has(tag)) selectedTags.delete(tag);
   else selectedTags.add(tag);
   document.getElementById('filterCount').textContent = selectedTags.size + ' selected';
+  renderTags();
   renderArticles();
 }
 
